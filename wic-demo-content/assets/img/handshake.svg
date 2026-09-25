@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-hidden="true">
+<rect width="1200" height="675" fill="#F2F3F5"/>
+<circle cx="1040" cy="120" r="210" fill="#FFFFFF"/>
+<g fill="#DDE1E7"><circle cx="70" cy="70" r="4"/><circle cx="96" cy="70" r="4"/><circle cx="122" cy="70" r="4"/><circle cx="148" cy="70" r="4"/><circle cx="174" cy="70" r="4"/><circle cx="200" cy="70" r="4"/><circle cx="70" cy="96" r="4"/><circle cx="96" cy="96" r="4"/><circle cx="122" cy="96" r="4"/><circle cx="148" cy="96" r="4"/><circle cx="174" cy="96" r="4"/><circle cx="200" cy="96" r="4"/><circle cx="70" cy="122" r="4"/><circle cx="96" cy="122" r="4"/><circle cx="122" cy="122" r="4"/><circle cx="148" cy="122" r="4"/><circle cx="174" cy="122" r="4"/><circle cx="200" cy="122" r="4"/><circle cx="70" cy="148" r="4"/><circle cx="96" cy="148" r="4"/><circle cx="122" cy="148" r="4"/><circle cx="148" cy="148" r="4"/><circle cx="174" cy="148" r="4"/><circle cx="200" cy="148" r="4"/><circle cx="70" cy="174" r="4"/><circle cx="96" cy="174" r="4"/><circle cx="122" cy="174" r="4"/><circle cx="148" cy="174" r="4"/><circle cx="174" cy="174" r="4"/><circle cx="200" cy="174" r="4"/></g>
+<rect x="-80" y="560" width="900" height="34" rx="17" fill="#C22227" transform="rotate(-6 400 577)" opacity=".9"/>
+<rect x="100" y="280" width="260" height="120" rx="20" fill="#112337"/>
+<rect x="840" y="280" width="260" height="120" rx="20" fill="#C22227"/>
+<path d="M340 300 q80 -40 170 -10 l150 50 q40 14 30 44 q-10 30 -48 20 l-40 -12" fill="#E9C8A8" stroke="#B98463" stroke-width="4"/>
+<path d="M860 300 q-80 -40 -170 -10 l-110 30 q-40 14 -30 44 l100 70 q30 20 56 0 l150 -110" fill="#B98463"/>
+<rect x="560" y="360" width="34" height="74" rx="17" fill="#E9C8A8" stroke="#B98463" stroke-width="4"/><rect x="598" y="366" width="34" height="74" rx="17" fill="#E9C8A8" stroke="#B98463" stroke-width="4"/><rect x="636" y="360" width="34" height="74" rx="17" fill="#E9C8A8" stroke="#B98463" stroke-width="4"/><rect x="674" y="366" width="34" height="74" rx="17" fill="#E9C8A8" stroke="#B98463" stroke-width="4"/>
+<circle cx="600" cy="150" r="52" fill="#FFFFFF"/><path d="M600 122 l12 26 l28 2 l-22 18 l8 28 l-26 -16 l-26 16 l8 -28 l-22 -18 l28 -2 Z" fill="#C22227"/>
+</svg>

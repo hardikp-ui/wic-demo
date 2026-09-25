@@ -1,0 +1,41 @@
+/*
+ * Forms, sessions, paths, competency and library views. Colours come from the portal tokens.
+ */
+
+/* Signed forms */
+.wic-form-body { margin-bottom: 1.25rem; line-height: 1.65; background: var(--wic-surface); border: 1px solid var(--wic-line); border-radius: var(--wic-radius); padding: 1.25rem 1.5rem; max-height: 28rem; overflow: auto; }
+
+/* Learning paths: status is shown by mark and word, never colour alone */
+.wic-path { display: grid; gap: 1rem; }
+.wic-phases, .wic-steps { list-style: none; padding: 0; margin: 0; }
+.wic-phase { position: relative; background: var(--wic-surface); border: 1px solid var(--wic-line); border-radius: var(--wic-radius); padding: 1rem 1.25rem; margin: 0 0 1rem; box-shadow: var(--wic-shadow-sm); }
+.wic-phase.is-done { border-color: #bfe3cc; box-shadow: inset 4px 0 0 var(--wic-ok), var(--wic-shadow-sm); }
+.wic-phase h4 { margin: 0 0 0.5rem; font-size: 1rem; }
+.wic-step { display: flex; align-items: center; gap: 0.7rem; flex-wrap: wrap; padding: 0.6rem 0; border-top: 1px solid var(--wic-line); }
+.wic-step:first-child { border-top: 0; }
+.wic-step__mark { flex: none; width: 1.75rem; height: 1.75rem; border-radius: 50%; border: 2px solid var(--wic-line-strong); display: inline-flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.85rem; color: var(--wic-muted); }
+.wic-step.is-done .wic-step__mark { color: #fff; background: var(--wic-ok); border-color: var(--wic-ok); }
+.wic-step.is-next { font-weight: 600; }
+.wic-step.is-next .wic-step__mark { border-color: var(--wic-accent); color: var(--wic-accent); }
+.wic-step .wic-btn { margin-left: auto; }
+
+/* Competency observation: big touch targets for use on a phone */
+.wic-competency, .wic-competency-pick { max-width: 42rem; }
+.wic-ck-item { background: var(--wic-surface); border: 1px solid var(--wic-line); border-radius: var(--wic-radius); padding: 0.9rem 1rem; margin: 0 0 0.75rem; display: grid; gap: 0.6rem; }
+.wic-ck-item legend { font-weight: 700; padding: 0 0.3rem; color: var(--wic-primary); }
+.wic-ck-marks { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+.wic-ck-mark { display: inline-flex; align-items: center; gap: 0.45rem; border: 1.5px solid var(--wic-line-strong); border-radius: var(--wic-radius-sm); padding: 0.6rem 0.9rem; min-height: 2.9rem; cursor: pointer; background: #fff; font-weight: 500; }
+.wic-ck-mark:hover { border-color: var(--wic-primary); }
+.wic-ck-mark:has(input:checked) { border-width: 2px; border-color: var(--wic-primary); background: var(--wic-soft); font-weight: 700; }
+.wic-ck-item input[type="text"], .wic-competency textarea, .wic-competency-batch textarea { font: inherit; padding: 0.55rem 0.75rem; border: 1.5px solid var(--wic-line-strong); border-radius: var(--wic-radius-sm); width: 100%; }
+.wic-competency-batch select { font: inherit; min-height: 2.25rem; border: 1.5px solid var(--wic-line-strong); border-radius: 6px; }
+.wic-competency-batch .wic-form { margin-top: 1rem; }
+
+/* Library */
+.wic-reference { overflow: auto; }
+
+@media (max-width: 600px) {
+	.wic-ck-marks { flex-direction: column; }
+	.wic-ck-mark { width: 100%; }
+	.wic-step .wic-btn { margin-left: 0; }
+}

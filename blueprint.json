@@ -1,0 +1,62 @@
+{
+    "$schema":  "https://playground.wordpress.net/blueprint-schema.json",
+    "landingPage":  "/",
+    "preferredVersions":  {
+                              "wp":  "latest",
+                              "php":  "8.3"
+                          },
+    "login":  true,
+    "steps":  [
+                  {
+                      "options":  {
+                                      "permalink_structure":  "/%postname%/",
+                                      "blogname":  "BrushArt WIC Training",
+                                      "blogdescription":  "WIC staff training platform (demo)"
+                                  },
+                      "step":  "setSiteOptions"
+                  },
+                  {
+                      "step":  "installPlugin",
+                      "options":  {
+                                      "activate":  true
+                                  },
+                      "pluginData":  {
+                                         "path":  "wic-training-platform",
+                                         "url":  "https://github.com/hardikp-ui/wic-demo",
+                                         "resource":  "git:directory",
+                                         "ref":  "main",
+                                         "refType":  "branch"
+                                     }
+                  },
+                  {
+                      "step":  "installTheme",
+                      "options":  {
+                                      "activate":  true
+                                  },
+                      "themeData":  {
+                                        "path":  "brushart-wic-theme",
+                                        "url":  "https://github.com/hardikp-ui/wic-demo",
+                                        "resource":  "git:directory",
+                                        "ref":  "main",
+                                        "refType":  "branch"
+                                    }
+                  },
+                  {
+                      "step":  "installPlugin",
+                      "options":  {
+                                      "activate":  true
+                                  },
+                      "pluginData":  {
+                                         "path":  "wic-demo-content",
+                                         "url":  "https://github.com/hardikp-ui/wic-demo",
+                                         "resource":  "git:directory",
+                                         "ref":  "main",
+                                         "refType":  "branch"
+                                     }
+                  },
+                  {
+                      "code":  "\u003c?php require \u0027/wordpress/wp-load.php\u0027;\nupdate_option( \u0027blog_public\u0027, 0 );\n$front = get_page_by_path( \u0027home\u0027 );\n$front = $front ? $front-\u003eID : wp_insert_post( array( \u0027post_type\u0027 =\u003e \u0027page\u0027, \u0027post_status\u0027 =\u003e \u0027publish\u0027, \u0027post_title\u0027 =\u003e \u0027Home\u0027, \u0027post_name\u0027 =\u003e \u0027home\u0027 ) );\nupdate_option( \u0027show_on_front\u0027, \u0027page\u0027 ); update_option( \u0027page_on_front\u0027, $front );\ndelete_option( \u0027wic_demo_seed_pending\u0027 );\nwp_set_current_user( 1 );\nif ( class_exists( \u0027WIC_Demo_Seeder\u0027 ) ) { WIC_Demo_Seeder::seed(); }\nflush_rewrite_rules();",
+                      "step":  "runPHP"
+                  }
+              ]
+}

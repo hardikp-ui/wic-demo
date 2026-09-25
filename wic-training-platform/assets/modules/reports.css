@@ -1,0 +1,6 @@
+/*
+ * Reports, assignment and notice views. Status badges, mini bars, filter bars and
+ * the "more" disclosure live in portal.css; every state is also written in words.
+ */
+.wic-dropoff td:last-child { min-width: 8rem; }
+.wic-dropoff .wic-mini-bar { width: 100%; max-width: 10rem; }

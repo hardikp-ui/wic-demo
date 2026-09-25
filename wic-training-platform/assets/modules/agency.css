@@ -1,0 +1,15 @@
+/* Agency set-up and look-and-feel preview. The preview uses its own --pv-* tokens so it never repaints the real page. */
+.wic-brand-preview { border: 1px dashed var(--wic-line); border-radius: var(--wic-radius); padding: 0.75rem; }
+.wic-brand-preview__frame { --pv-primary: #1f5f8b; --pv-accent: #e0a100; --pv-ink: #1d2430; --pv-surface: #ffffff; background: var(--pv-surface); color: var(--pv-ink); border: 1px solid var(--wic-line); border-radius: var(--wic-radius); padding: 0.75rem; display: grid; gap: 0.6rem; }
+.wic-brand-preview__head { display: flex; align-items: center; gap: 0.5rem; font-weight: 700; color: var(--pv-primary); }
+.wic-brand-preview__head img { max-height: 2rem; width: auto; }
+.wic-brand-preview__tabs { display: flex; gap: 0.75rem; border-bottom: 2px solid var(--wic-line); }
+.wic-brand-preview__tabs span { padding: 0.25rem 0; border-bottom: 3px solid transparent; margin-bottom: -2px; }
+.wic-brand-preview__tabs .is-on { border-bottom-color: var(--pv-primary); color: var(--pv-primary); font-weight: 600; }
+.wic-brand-preview__card { border: 1px solid var(--wic-line); border-radius: var(--wic-radius); padding: 0.6rem; display: grid; gap: 0.4rem; }
+.wic-brand-preview__card a { color: var(--pv-primary); }
+.wic-brand-preview__bar { height: 0.5rem; border-radius: 999px; background: #eef1f5; overflow: hidden; }
+.wic-brand-preview__bar span { display: block; width: 60%; height: 100%; background: var(--pv-primary); }
+.wic-brand-preview__btn { justify-self: start; background: var(--pv-primary); color: #fff; padding: 0.35rem 0.8rem; border-radius: var(--wic-radius); font-weight: 600; outline: 3px solid transparent; box-shadow: 0 0 0 3px var(--pv-accent); }
+[data-preview-contrast].is-fail { color: var(--wic-err); font-weight: 600; }
+.wic-field input[type="color"] { min-height: 2.5rem; width: 5rem; padding: 0.15rem; }

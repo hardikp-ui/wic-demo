@@ -1,0 +1,17 @@
+/* Portal authoring: module panels, slide rows and the slide editor. Base form, panel and FAQ styles live in portal.css. */
+.wic-module { margin-bottom: 1.25rem; }
+.wic-module__title { margin: 0; font-size: 1.05rem; }
+.wic-module details { margin: 0.5rem 0; }
+.wic-module-form { margin: 0.5rem 0; }
+.wic-slides { list-style: none; counter-reset: wic-slide; margin: 0.75rem 0; padding: 0; border: 1px solid var(--wic-line); border-radius: var(--wic-radius-sm, 8px); background: var(--wic-surface); }
+.wic-slide-row { counter-increment: wic-slide; display: flex; justify-content: space-between; align-items: center; gap: 0.75rem; flex-wrap: wrap; padding: 0.6rem 0.85rem; border-bottom: 1px solid var(--wic-line); }
+.wic-slide-row::before { content: counter(wic-slide); flex: none; width: 1.75rem; height: 1.75rem; border-radius: 50%; background: var(--wic-soft); color: var(--wic-primary); font-weight: 700; font-size: 0.8rem; display: inline-flex; align-items: center; justify-content: center; }
+.wic-slide-row:last-child { border-bottom: 0; }
+.wic-slide-row:hover { background: var(--wic-softer, #f7f8fa); }
+.wic-slide-row__title { flex: 1 1 12rem; display: inline-flex; gap: 0.4rem; align-items: center; flex-wrap: wrap; font-weight: 600; }
+.wic-row .wic-field input, .wic-row .wic-field textarea { width: 100%; }
+.wic-slide-editor .wic-panel + .wic-panel { margin-top: 1rem; }
+[data-qshow][hidden] { display: none; }
+@media (max-width: 600px) {
+	.wic-slide-row { align-items: flex-start; }
+}

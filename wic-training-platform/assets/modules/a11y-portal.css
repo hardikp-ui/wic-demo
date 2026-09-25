@@ -1,0 +1,34 @@
+/* Text size (#149): scales the root so every rem-based size in the portal follows. */
+html[data-wic-text="sm"] { font-size: 93.75%; }
+html[data-wic-text="lg"] { font-size: 112.5%; }
+html[data-wic-text="xl"] { font-size: 125%; }
+
+.wic-textsize { display: inline-flex; border: 1px solid var(--wic-line); border-radius: var(--wic-radius); overflow: hidden; }
+.wic-textsize__btn { font: inherit; font-weight: 600; background: var(--wic-surface); color: var(--wic-ink); border: 0; border-right: 1px solid var(--wic-line); padding: 0.2rem 0.55rem; cursor: pointer; min-height: 2rem; min-width: 2.25rem; }
+.wic-textsize__btn:last-child { border-right: 0; }
+.wic-textsize__btn[aria-pressed="true"] { background: var(--wic-primary); color: #fff; }
+.wic-textsize__btn:focus-visible { outline: 3px solid var(--wic-accent); outline-offset: -3px; }
+
+/* Language switcher (#54) */
+.wic-lang { display: inline-flex; gap: 0.35rem; align-items: center; }
+.wic-lang select { font: inherit; padding: 0.2rem 0.4rem; border: 1px solid #9aa4b1; border-radius: 0.35rem; min-height: 2rem; }
+.wic-lang-links { margin: 0 0 1rem; font-size: 0.95rem; }
+.wic-lang-links a[aria-current="true"] { font-weight: 700; text-decoration: none; }
+
+/* Accessibility statement */
+.wic-a11y-statement ul { padding-left: 1.25rem; }
+
+/* Refreshers */
+.wic-boost-form { max-width: 48rem; }
+.wic-boost-q { display: grid; gap: 0.5rem; }
+.wic-boost-q legend { font-weight: 600; margin-bottom: 0.5rem; }
+.wic-boost-opt { display: flex; gap: 0.5rem; align-items: flex-start; padding: 0.35rem 0; }
+.wic-boost-opt input { margin-top: 0.3rem; width: 1.1rem; height: 1.1rem; }
+.wic-boost-clip { margin: 0 0 1rem; }
+.wic-boost-clip video { max-width: 100%; border-radius: var(--wic-radius); }
+.wic-boost-results li { display: block; }
+.wic-boost-results p { margin: 0.25rem 0; }
+
+@media (max-width: 600px) {
+	.wic-textsize__btn { padding: 0.2rem 0.45rem; }
+}

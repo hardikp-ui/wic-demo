@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" role="img" aria-hidden="true">
+<rect width="1200" height="675" fill="#F2F3F5"/>
+<circle cx="1040" cy="120" r="210" fill="#FFFFFF"/>
+<g fill="#DDE1E7"><circle cx="70" cy="70" r="4"/><circle cx="96" cy="70" r="4"/><circle cx="122" cy="70" r="4"/><circle cx="148" cy="70" r="4"/><circle cx="174" cy="70" r="4"/><circle cx="200" cy="70" r="4"/><circle cx="70" cy="96" r="4"/><circle cx="96" cy="96" r="4"/><circle cx="122" cy="96" r="4"/><circle cx="148" cy="96" r="4"/><circle cx="174" cy="96" r="4"/><circle cx="200" cy="96" r="4"/><circle cx="70" cy="122" r="4"/><circle cx="96" cy="122" r="4"/><circle cx="122" cy="122" r="4"/><circle cx="148" cy="122" r="4"/><circle cx="174" cy="122" r="4"/><circle cx="200" cy="122" r="4"/><circle cx="70" cy="148" r="4"/><circle cx="96" cy="148" r="4"/><circle cx="122" cy="148" r="4"/><circle cx="148" cy="148" r="4"/><circle cx="174" cy="148" r="4"/><circle cx="200" cy="148" r="4"/><circle cx="70" cy="174" r="4"/><circle cx="96" cy="174" r="4"/><circle cx="122" cy="174" r="4"/><circle cx="148" cy="174" r="4"/><circle cx="174" cy="174" r="4"/><circle cx="200" cy="174" r="4"/></g>
+<rect x="-80" y="560" width="900" height="34" rx="17" fill="#C22227" transform="rotate(-6 400 577)" opacity=".9"/>
+<rect x="250" y="110" width="700" height="430" rx="16" fill="#FFFFFF"/>
+<rect x="276" y="136" width="648" height="378" rx="8" fill="none" stroke="#112337" stroke-width="6"/>
+<rect x="290" y="150" width="620" height="350" rx="6" fill="none" stroke="#C22227" stroke-width="2"/>
+<rect x="450" y="200" width="300" height="22" rx="11" fill="#112337"/>
+<rect x="400" y="260" width="400" height="14" rx="7" fill="#DDE1E7"/><rect x="460" y="290" width="280" height="14" rx="7" fill="#DDE1E7"/>
+<rect x="360" y="400" width="180" height="6" rx="3" fill="#1B3350"/>
+<circle cx="770" cy="420" r="58" fill="#C22227"/><circle cx="770" cy="420" r="40" fill="none" stroke="#FFFFFF" stroke-width="6"/><path d="M745 470 l-14 70 l39 -24 l39 24 l-14 -70" fill="#C22227"/>
+</svg>
